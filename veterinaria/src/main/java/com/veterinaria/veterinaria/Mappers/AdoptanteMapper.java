@@ -22,7 +22,7 @@ public class AdoptanteMapper {
         return response;
     }
 
-    public Adoptante toEntity(AdoptanteRequest request) {
+    public static Adoptante toEntity(AdoptanteRequest request) {
 
         Adoptante adoptante = new Adoptante();
         adoptante.setNombre(request.getNombre());
