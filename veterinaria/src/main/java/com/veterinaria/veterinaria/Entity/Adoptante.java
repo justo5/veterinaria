@@ -1,9 +1,13 @@
 package com.veterinaria.veterinaria.Entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+@AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
 @Entity
@@ -28,16 +32,4 @@ public class Adoptante {
     @Column(name = "email", length = 50, nullable = false)
     private String email;
 
-    public Adoptante(int id, String nombre, String apellido, int dni, int telefono, String email) {
-        this.id = id;
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.dni = dni;
-        this.telefono = telefono;
-        this.email = email;
-    }
-
-    public Adoptante() {
-
-    }
 }

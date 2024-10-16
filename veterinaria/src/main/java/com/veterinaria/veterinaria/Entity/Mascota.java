@@ -1,9 +1,13 @@
 package com.veterinaria.veterinaria.Entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+@AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
 @Entity
@@ -21,17 +25,6 @@ public class Mascota {
 
     @Column(name ="especie",length = 100,nullable = false)
     private String especie;
-
-    public Mascota(int id, String nombre, boolean estado, String especie) {
-
-        this.id = id;
-        this.nombre = nombre;
-        this.estado = estado;
-        this.especie = especie;
-    }
-
-    public Mascota(){}
-
 
     public boolean getEstado() {
         return false;

@@ -2,14 +2,9 @@ package com.veterinaria.veterinaria.Controller;
 
 import com.veterinaria.veterinaria.DTOS.AdoptanteRequest;
 import com.veterinaria.veterinaria.DTOS.AdoptanteResponses;
-import com.veterinaria.veterinaria.DTOS.MascotaRequest;
-import com.veterinaria.veterinaria.DTOS.MascotaResponses;
 import com.veterinaria.veterinaria.Entity.Adoptante;
-import com.veterinaria.veterinaria.Entity.Mascota;
 import com.veterinaria.veterinaria.Mappers.AdoptanteMapper;
-import com.veterinaria.veterinaria.Mappers.MascotaMapper;
 import com.veterinaria.veterinaria.Services.AdoptanteService;
-import com.veterinaria.veterinaria.Services.MascotaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -29,7 +24,7 @@ class AdoptanteController {
     @PostMapping("/create")
     public ResponseEntity<AdoptanteResponses> crearAdoptante(@RequestBody AdoptanteRequest adoptanteRequest) {
         Adoptante adoptante = AdoptanteMapper.toEntity(adoptanteRequest); // Convertir DTO a entidad
-        Adoptante savedAdoptante = adoptanteService.save(adoptante); // Guardar la mascota
+        Adoptante savedAdoptante = adoptanteService.save(adoptante); // Guardar la adoptante
         AdoptanteResponses response = adoptanteMapper.toResponse(savedAdoptante); // Convertir entidad a DTO
         return ResponseEntity.ok(response);
     }
