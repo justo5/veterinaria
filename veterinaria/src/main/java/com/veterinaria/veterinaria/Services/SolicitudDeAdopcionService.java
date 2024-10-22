@@ -33,7 +33,6 @@ public class SolicitudDeAdopcionService {
 
     public void deleteById(Integer id) {
 
-
         solicitudDeAdopcionRepository.deleteById(id);
     }
 }

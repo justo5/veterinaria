@@ -11,7 +11,6 @@ import java.util.Date;
 @Entity
 public class SolicitudDeAdopcion {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;

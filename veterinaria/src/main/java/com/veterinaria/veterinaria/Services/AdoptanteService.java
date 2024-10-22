@@ -19,7 +19,9 @@ public class AdoptanteService {
         return adoptanteRepository.findAll();
     }
 
-    //Optional en el método findById que ayuda a manejar la posibilidad de que no se encuentre un recurso. Si llamamos a findById y no existe un Adoptante con el ID proporcionado, Optional permite evitar excepciones NullPointerException
+    //Optional en el método findById que ayuda a manejar la posibilidad de que no se encuentre un recurso.
+    // Si llamamos a findById y no existe un Adoptante con el ID proporcionado, Optional permite evitar
+    // excepciones NullPointerException
     public Optional<Adoptante> findById(Integer id) {
         return adoptanteRepository.findById(id);
     }
