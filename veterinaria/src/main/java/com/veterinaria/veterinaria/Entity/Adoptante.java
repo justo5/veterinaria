@@ -10,6 +10,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
+@Table(name = "Adoptantes")
 @Entity
 public class Adoptante {
 

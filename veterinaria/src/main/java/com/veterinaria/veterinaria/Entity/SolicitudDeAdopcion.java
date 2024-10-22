@@ -12,6 +12,7 @@ import java.util.Date;
 @NoArgsConstructor
 @Getter
 @Setter
+@Table(name =  "solicitudes de adopcion")
 @Entity
 public class SolicitudDeAdopcion {
 
