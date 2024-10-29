@@ -1,10 +1,7 @@
 package com.veterinaria.veterinaria.Controller;
 
-import com.veterinaria.veterinaria.DTOS.MascotaRequest;
-import com.veterinaria.veterinaria.DTOS.MascotaResponses;
 import com.veterinaria.veterinaria.DTOS.SolicitudDeAdopcionRequest;
 import com.veterinaria.veterinaria.DTOS.SolicitudDeAdopcionResponses;
-import com.veterinaria.veterinaria.Entity.Mascota;
 import com.veterinaria.veterinaria.Entity.SolicitudDeAdopcion;
 import com.veterinaria.veterinaria.Mappers.SolicitudDeAdopcionMapper;
 import org.springframework.beans.factory.annotation.Autowired;
